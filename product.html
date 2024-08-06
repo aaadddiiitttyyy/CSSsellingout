@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Sneakers Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="logoo.png" alt="Sneakers Store Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="product-intro">
+            <h1>Our Sneakers Collection</h1>
+            <p>Explore our latest collection of sneakers designed for comfort and style. Whether you're hitting the gym or the streets, we have the perfect pair for you.</p>
+        </section>
+        <section class="product-grid">
+            <!-- Existing Products -->
+            <div class="product-item">
+                <div class="product-image">
+                    <img src="red.png" alt="Sneaker Model 1">
+                </div>
+                <div class="product-info">
+                    <h3>Nike SB Dunk</h3>
+                    <p>$99.99</p>
+                    <div class="rating">
+                        <span>&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+                    </div>
+                    <a href="#" class="btn" onclick="showModal('modal1')">View Details</a>
+                    <a href="#" class="buy-now">Buy Now</a>
+                </div>
+            </div>
+            <div class="product-item">
+                <div class="product-image">
+                    <img src="retro4.jpeg" alt="Sneaker Model 2">
+                </div>
+                <div class="product-info">
+                    <h3>Jordan Retro 4</h3>
+                    <p>$109.99</p>
+                    <div class="rating">
+                        <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                    </div>
+                    <a href="#" class="btn" onclick="showModal('modal2')">View Details</a>
+                    <a href="#" class="buy-now">Buy Now</a>
+                </div>
+            </div>
+            <div class="product-item">
+                <div class="product-image">
+                    <img src="sneaker3.jpg" alt="Sneaker Model 3">
+                </div>
+                <div class="product-info">
+                    <h3>Jordan Flight Red</h3>
+                    <p>$119.99</p>
+                    <div class="rating">
+                        <span>&#9733;&#9733;&#9733;&#9734;&#9734;</span>
+                    </div>
+                    <a href="#" class="btn" onclick="showModal('modal3')">View Details</a>
+                    <a href="#" class="buy-now">Buy Now</a>
+                </div>
+            </div>
+            <div class="product-item">
+                <div class="product-image">
+                    <img src="sneaker4.jpg" alt="Sneaker Model 4">
+                </div>
+                <div class="product-info">
+                    <h3>Nike Jordan 1</h3>
+                    <p>$129.99</p>
+                    <div class="rating">
+                        <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                    </div>
+                    <a href="#" class="btn" onclick="showModal('modal4')">View Details</a>
+                    <a href="#" class="buy-now">Buy Now</a>
+                </div>
+            </div>
+
+            <!-- New Products -->
+            <div class="product-item">
+                <div class="product-image">
+                    <img src="travis.jpg" alt="Sneaker Model 5">
+                </div>
+                <div class="product-info">
+                    <h3>Jordan travis Scott Low dunk</h3>
+                    <p>$139.99</p>
+                    <div class="rating">
+                        <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                    </div>
+                    <a href="#" class="btn" onclick="showModal('modal5')">View Details</a>
+                    <a href="#" class="buy-now">Buy Now</a>
+                </div>
+            </div>
+            <div class="product-item">
+                <div class="product-image">
+                    <img src="blue.png" alt="Sneaker Model 6">
+                </div>
+                <div class="product-info">
+                    <h3>Air Force 1 High OG</h3>
+                    <p>$159.99</p>
+                    <div class="rating">
+                        <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                    </div>
+                    <a href="#" class="btn" onclick="showModal('modal6')">View Details</a>
+                    <a href="#" class="buy-now">Buy Now</a>
+                </div>
+            </div>
+            <div class="product-item">
+                <div class="product-image">
+                    <img src="panda.jpeg" alt="Sneaker Model 7">
+                </div>
+                <div class="product-info">
+                    <h3>Jordan panda dunk 1</h3>
+                    <p>$89.99</p>
+                    <div class="rating">
+                        <span>&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+                    </div>
+                    <a href="#" class="btn" onclick="showModal('modal7')">View Details</a>
+                    <a href="#" class="buy-now">Buy Now</a>
+                </div>
+            </div>
+            <div class="product-item">
+                <div class="product-image">
+                    <img src="purple.jpg" alt="Sneaker Model 8">
+                </div>
+                <div class="product-info">
+                    <h3>Air jordan 1 Mid'Purple Mocha'</h3>
+                    <p>$165.99</p>
+                    <div class="rating">
+                        <span>&#9733;&#9733;&#9733;&#9734;&#9734;</span>
+                    </div>
+                    <a href="#" class="btn" onclick="showModal('modal8')">View Details</a>
+                    <a href="#" class="buy-now">Buy Now</a>
+                </div>
+            </div>
+            <div class="product-item">
+                <div class="product-image">
+                    <img src="pink.jpeg" alt="Sneaker Model 9">
+                </div>
+                <div class="product-info">
+                    <h3>Air Force White</h3>
+                    <p>$119.99</p>
+                    <div class="rating">
+                        <span>&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+                    </div>
+                    <a href="#" class="btn" onclick="showModal('modal9')">View Details</a>
+                    <a href="#" class="buy-now">Buy Now</a>
+                </div>
+            </div>
+
+            <!-- Additional Products -->
+            <div class="product-item">
+                <div class="product-image">
+                    <img src="1111.jpg" alt="Sneaker Model 10">
+                </div>
+                <div class="product-info">
+                    <h3>Retro 4 'Military'</h3>
+                    <p>$189.99</p>
+                    <div class="rating">
+                        <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                    </div>
+                    <a href="#" class="btn" onclick="showModal('modal10')">View Details</a>
+                    <a href="#" class="buy-now">Buy Now</a>
+                </div>
+            </div>
+            <div class="product-item">
+                <div class="product-image">
+                    <img src="whitejordan.jpg" alt="Sneaker Model 11">
+                </div>
+                <div class="product-info">
+                    <h3>White Jordan AF1 HIGH</h3>
+                    <p>$99.99</p>
+                    <div class="rating">
+                        <span>&#9733;&#9733;&#9733;&#9734;&#9734;</span>
+                    </div>
+                    <a href="#" class="btn" onclick="showModal('modal11')">View Details</a>
+                    <a href="#" class="buy-now">Buy Now</a>
+                </div>
+            </div>
+            <div class="product-item">
+                <div class="product-image">
+                    <img src="redgreen.jpg" alt="Sneaker Model 12">
+                </div>
+                <div class="product-info">
+                    <h3>Customize Low Dunk</h3>
+                    <p>$129.99</p>
+                    <div class="rating">
+                        <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                    </div>
+                    <a href="#" class="btn" onclick="showModal('modal12')">View Details</a>
+                    <a href="#" class="buy-now">Buy Now</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Modal 1 -->
+        <div id="modal1" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal1')">&times;</span>
+                <h2>Nike SB Dunk</h2>
+                <p><strong>Price:</strong> $99.99</p>
+                <p><strong>Color:</strong> Red</p>
+                <p><strong>Material:</strong> Leather</p>
+                <p><strong>Size Range:</strong> 7-12</p>
+                <p><strong>Available Stock:</strong> 50</p>
+            </div>
+        </div>
+
+        <!-- Modal 2 -->
+        <div id="modal2" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal2')">&times;</span>
+                <h2>Jordan Retro 4</h2>
+                <p><strong>Price:</strong> $109.99</p>
+                <p><strong>Color:</strong> Black/White</p>
+                <p><strong>Material:</strong> Suede</p>
+                <p><strong>Size Range:</strong> 8-13</p>
+                <p><strong>Available Stock:</strong> 30</p>
+            </div>
+        </div>
+
+        <!-- Modal 3 -->
+        <div id="modal3" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal3')">&times;</span>
+                <h2>Jordan Flight Red</h2>
+                <p><strong>Price:</strong> $119.99</p>
+                <p><strong>Color:</strong> Blue</p>
+                <p><strong>Material:</strong> Mesh</p>
+                <p><strong>Size Range:</strong> 7-11</p>
+                <p><strong>Available Stock:</strong> 40</p>
+            </div>
+        </div>
+
+        <!-- Modal 4 -->
+        <div id="modal4" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal4')">&times;</span>
+                <h2>Nike Jordan 1</h2>
+                <p><strong>Price:</strong> $129.99</p>
+                <p><strong>Color:</strong> Green</p>
+                <p><strong>Material:</strong> Synthetic</p>
+                <p><strong>Size Range:</strong> 8-12</p>
+                <p><strong>Available Stock:</strong> 25</p>
+            </div>
+        </div>
+
+        <!-- Modal 5 -->
+        <div id="modal5" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal5')">&times;</span>
+                <h2>Jordan Travis Scott Low dunk</h2>
+                <p><strong>Price:</strong> $139.99</p>
+                <p><strong>Color:</strong> Brown</p>
+                <p><strong>Material:</strong> Primeknit</p>
+                <p><strong>Size Range:</strong> 7-13</p>
+                <p><strong>Available Stock:</strong> 2</p>
+            </div>
+        </div>
+
+        <!-- Modal 6 -->
+        <div id="modal6" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal6')">&times;</span>
+                <h2>Air Force 1 High OG</h2>
+                <p><strong>Price:</strong> $159.99</p>
+                <p><strong>Color:</strong> Blue</p>
+                <p><strong>Material:</strong> Suede/Mesh</p>
+                <p><strong>Size Range:</strong> 8-14</p>
+                <p><strong>Available Stock:</strong> 15</p>
+            </div>
+        </div>
+
+        <!-- Modal 7 -->
+        <div id="modal7" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal7')">&times;</span>
+                <h2>Jordan Panda dunk 1</h2>
+                <p><strong>Price:</strong> $89.99</p>
+                <p><strong>Color:</strong> Black</p>
+                <p><strong>Material:</strong> Canvas</p>
+                <p><strong>Size Range:</strong> 6-12</p>
+                <p><strong>Available Stock:</strong> 40</p>
+            </div>
+        </div>
+
+        <!-- Modal 8 -->
+        <div id="modal8" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal8')">&times;</span>
+                <h2>Air jordan 1 Mid'Purple Mocha'</h2>
+                <p><strong>Price:</strong> $165.99</p>
+                <p><strong>Color:</strong> Purple/Brown</p>
+                <p><strong>Material:</strong> Mesh/Synthetic</p>
+                <p><strong>Size Range:</strong> 7-12</p>
+                <p><strong>Available Stock:</strong> 25</p>
+            </div>
+        </div>
+
+        <!-- Modal 9 -->
+        <div id="modal9" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal9')">&times;</span>
+                <h2>Air Force white</h2>
+                <p><strong>Price:</strong> $119.99</p>
+                <p><strong>Color:</strong> White/Pink</p>
+                <p><strong>Material:</strong> Mesh/Suede</p>
+                <p><strong>Size Range:</strong> 8-13</p>
+                <p><strong>Available Stock:</strong> 30</p>
+            </div>
+        </div>
+
+        <!-- Modal 10 -->
+        <div id="modal10" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal10')">&times;</span>
+                <h2>Retro 4 'Military'</h2>
+                <p><strong>Price:</strong> $189.99</p>
+                <p><strong>Color:</strong> Black/Brown</p>
+                <p><strong>Material:</strong> Canvas</p>
+                <p><strong>Size Range:</strong> 6-11</p>
+                <p><strong>Available Stock:</strong> 5</p>
+            </div>
+        </div>
+
+        <!-- Modal 11 -->
+        <div id="modal11" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal11')">&times;</span>
+                <h2>White Jordan AF1 HIGH</h2>
+                <p><strong>Price:</strong> $99.99</p>
+                <p><strong>Color:</strong> White</p>
+                <p><strong>Material:</strong> Leather</p>
+                <p><strong>Size Range:</strong> 7-12</p>
+                <p><strong>Available Stock:</strong> 5</p>
+            </div>
+        </div>
+
+        <!-- Modal 12 -->
+        <div id="modal12" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal12')">&times;</span>
+                <h2>Customize Low Dunk</h2>
+                <p><strong>Price:</strong> $129.99</p>
+                <p><strong>Color:</strong> Red/Green</p>
+                <p><strong>Material:</strong> Knit</p>
+                <p><strong>Size Range:</strong> 8-13</p>
+                <p><strong>Available Stock:</strong> 2</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Sneakers Store. All rights reserved.</p>
+        <form action="contact.html">
+            <input type="email" placeholder="Subscribe to our newsletter">
+            <button type="submit">Subscribe</button>
+        </form>
+    </footer>
+    <script>
+        // Function to show modal
+        function showModal(modalId) {
+            document.getElementById(modalId).style.display = 'flex';
+        }
+
+        // Function to close modal
+        function closeModal(modalId) {
+            document.getElementById(modalId).style.display = 'none';
+        }
+
+        // Close the modal when clicking outside of it
+        window.onclick = function(event) {
+            if (event.target.classList.contains('modal')) {
+                closeModal(event.target.id);
+            }
+        }
+    </script>
+</body>
+</html>
